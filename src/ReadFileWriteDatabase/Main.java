@@ -26,9 +26,13 @@ public class Main {
 
             while (input.hasNextLine()){
                 String[] data = input.nextLine().split(",");
-                fruit.addAll(Arrays.asList(data));
+                for (int i=0; i< data.length; i++){
+                    fruit.add(data[i]);
+                }
+//                fruits.add(fruit);
+                //fruit.addAll(Arrays.asList(data));
 
-                ArrayList<ArrayList<String>> outerList = new ArrayList<>();
+              /*  ArrayList<ArrayList<String>> outerList = new ArrayList<>();
 
                 // Loop through each array in the array of arrays
                 for (String[] innerArray : arrayOfArrays) {
@@ -39,11 +43,11 @@ public class Main {
                     }
                     // Add the inner ArrayList to the outer ArrayList
                     outerList.add(innerList);
-                }
+                }*/
 
             }
             fruits.add(fruit);
-                int id =Integer.parseInt(data[0].trim());
+               /* int id =Integer.parseInt(data[0].trim());
                 String name = data[1].trim();
                 String buyer = data[2].trim();
                 String seller = data[3].trim();
@@ -58,7 +62,7 @@ public class Main {
                 } else if (name.equalsIgnoreCase("banana")) {
                     fruits.add(new Banana(id, name, buyer, seller, price, buyDate.toLocalDate(), sellDate.toLocalDate()));
 
-                }
+                }*/
 
         }catch (Exception e){
             System.out.println(e.getMessage());
@@ -77,7 +81,7 @@ public class Main {
         insertFruits.insertDummyData(fruitsArray);
 
 
-        ArrayList<Fruits> fruitsArrayList = new ArrayList<>();
+       /* ArrayList<Fruits> fruitsArrayList = new ArrayList<>();
         try (PrintWriter writer= new PrintWriter("C:\\GIT\\jdbc-connection\\src\\ReadFileWriteDatabase\\write.csv")){
             for (Fruits fruitsList: fruitsArrayList) {
                 if (fruitsList instanceof PartTimeEmployee){
@@ -87,7 +91,7 @@ public class Main {
             }
         }catch (FileNotFoundException e){
             System.out.println(e.getMessage());
-        }
+        }*/
 
         /*SelectFruits fruits = new SelectFruits();
         fruits.selectAllFruits();*/
