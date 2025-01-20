@@ -1,11 +1,14 @@
+package insertData;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class InsertStudentPostgre {
-    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
-    private static final String USER = "postgres";
+public class InsertStudentOracle {
+
+    private static final String URL = "jdbc:oracle:thin:@localhost:1521/ORCLPDB";
+    private static final String USER = "orclpdbuser";
     private static final String PASSWORD = "isdb62";
 
     public void insertDummyData(String[][] students ){
