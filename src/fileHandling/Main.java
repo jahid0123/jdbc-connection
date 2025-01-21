@@ -21,13 +21,13 @@ public class Main {
         List<String[]> readData=retriveData.getArrayString();
 
         for (String[] data: readData){
-            /*if (data[0].equalsIgnoreCase("1")){
+            if (data[0].equalsIgnoreCase("1")){
                 data[2] = "Hemel";
                 data[3] =  "Ashik";
-            }*/
+            }
 
-            data[2] = "Hemel";
-            data[3] =  "Ashik";
+            /*data[2] = "Hemel";
+            data[3] =  "Ashik";*/
         }
 
 
